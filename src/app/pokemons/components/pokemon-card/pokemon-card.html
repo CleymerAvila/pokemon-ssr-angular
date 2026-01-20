@@ -1,0 +1,16 @@
+<div
+class="bg-slate-800 animate-fade-in h-44 bg-opacity-25 rounded-lg shadow-md flex flex-col justify-center items-center p-4"
+  [routerLink]="['/pokemons', pokemon().id]"
+  >
+  <img
+    [src]="pokemonImage()"
+    alt="pokemon image {{pokemon().id}}"
+    class="w-24 h-24"
+    width="96px"
+    height="96px"
+  />
+
+  <div class="text-center mt-2">
+    <h2 class="text-2xl font-bold capitalize text-white ">{{pokemon().name}}</h2>
+  </div>
+</div>
